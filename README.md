@@ -96,7 +96,7 @@ botocore.session.Session(profile=profile)
 
 ## Security
 
-See CONTRIBUTING for more information.
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
 
 ## License
 
