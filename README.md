@@ -94,6 +94,10 @@ print(s3.list_buckets())
 botocore.session.Session(profile=profile)
 ```
 
+## Security
+
+See CONTRIBUTING for more information.
+
 ## License
 
--This project is licensed under the Apache-2.0 License.
+This project is licensed under the Apache-2.0 License.
