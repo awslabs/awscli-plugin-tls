@@ -1,0 +1,33 @@
+default_language_version:
+    python: python3.7
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    - id: check-yaml
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+    - id: pretty-format-json
+      args: ['--no-sort-keys', '--autofix']
+  - repo: https://github.com/psf/black
+    rev: 21.12b0
+    hooks:
+    - id: black
+  - repo: https://github.com/PyCQA/bandit
+    rev: "1.7.0"
+    hooks:
+      - id: bandit
+        log_file: ./bandit.log
+        verbose: true
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
+    rev: v1.2.1
+    hooks:
+      - id: python-safety-dependencies-check
+        log_file: ./safety.log
+        verbose: true
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.1.0
+    hooks:
+      - id: detect-secrets
+        log_file: ./detect-secrets.log
+        verbose: true
